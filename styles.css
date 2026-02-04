@@ -1038,6 +1038,127 @@ section {
 }
 
 /* ============================================
+   MYTH VS FACT SECTION
+   ============================================ */
+
+.myth-fact-container {
+    margin-top: var(--spacing-3xl);
+    text-align: center;
+}
+
+.myth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    perspective: 1000px;
+}
+
+.flip-card {
+    background-color: transparent;
+    height: 350px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-xl);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.flip-card-front {
+    background-color: var(--white);
+    color: var(--gray-900);
+}
+
+.flip-card-back {
+    background: var(--gradient-eco);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Icons */
+.myth-icon,
+.fact-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.myth-icon.warning {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+}
+
+.fact-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+.flip-card h4 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 1px;
+}
+
+.flip-card-front h4 {
+    color: var(--danger);
+}
+
+.flip-card-back h4 {
+    color: var(--white);
+}
+
+.flip-card p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.click-hint {
+    margin-top: auto;
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--gray-100);
+    width: 100%;
+    justify-content: center;
+}
+
+/* ============================================
    CHALLENGE SECTION
    ============================================ */
 
