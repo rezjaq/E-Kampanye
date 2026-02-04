@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeParticles();
     initializeBackToTop();
     initializeSmoothScroll();
+    initializeEcoIcons(); // Add eco icons to sections
 });
 
 // ============================================
@@ -698,6 +699,48 @@ if ('serviceWorker' in navigator) {
         //     console.log('ServiceWorker registration failed: ', err);
         // });
     });
+}
+
+// ============================================
+// DECORATIVE ECO ICONS
+// ============================================
+
+function initializeEcoIcons() {
+    // Define eco-friendly icons
+    const ecoIcons = [
+        'fa-leaf',
+        'fa-seedling',
+        'fa-tree',
+        'fa-recycle',
+        'fa-water',
+        'fa-sun',
+        'fa-wind',
+        'fa-globe-asia',
+        'fa-heart',
+        'fa-hands-helping'
+    ];
+
+    // Sections to add icons to
+    const sections = document.querySelectorAll('section:not(#home)');
+
+    sections.forEach((section, sectionIndex) => {
+        // Create container for eco icons
+        const iconContainer = document.createElement('div');
+        iconContainer.className = 'section-eco-icons';
+
+        // Add 6 icons per section
+        for (let i = 1; i <= 6; i++) {
+            const icon = document.createElement('i');
+            const randomIcon = ecoIcons[Math.floor(Math.random() * ecoIcons.length)];
+            icon.className = `fas ${randomIcon} eco-icon icon-${i}`;
+            iconContainer.appendChild(icon);
+        }
+
+        // Insert at the beginning of section
+        section.insertBefore(iconContainer, section.firstChild);
+    });
+
+    console.log('✨ Eco icons initialized in all sections');
 }
 
 // ============================================
