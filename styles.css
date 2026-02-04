@@ -2679,3 +2679,84 @@ section>.container {
         display: none;
     }
 }
+
+/* ============================================
+   MOBILE OPTIMIZATIONS (ACTION TIPS & MYTH)
+   ============================================ */
+@media (max-width: 768px) {
+
+    /* ACTION TIPS - HORIZONTAL SCROLL / CAROUSEL */
+    .action-tips {
+        padding: var(--spacing-xl) 0;
+        border-radius: var(--radius-lg);
+        background: linear-gradient(180deg, #047857 0%, #059669 100%);
+        overflow: hidden;
+    }
+
+    .action-tips .tips-title {
+        padding: 0 var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
+        font-size: 1.5rem;
+    }
+
+    .tips-grid {
+        display: flex !important;
+        /* Force flex instead of grid */
+        flex-direction: row !important;
+        /* Force row direction */
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: var(--spacing-md);
+        padding: 0 var(--spacing-md) var(--spacing-lg) var(--spacing-md);
+        scrollbar-width: none;
+        /* Hide scrollbar Firefox */
+        -ms-overflow-style: none;
+        /* Hide scrollbar IE */
+    }
+
+    .tips-grid::-webkit-scrollbar {
+        display: none;
+        /* Hide scrollbar Chrome/Safari */
+    }
+
+    .tip-card {
+        min-width: 280px;
+        width: 80%;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+        margin-bottom: 0;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* MYTH VS FACT MOBILE FIXES */
+    .myth-fact-container {
+        margin-top: 3rem !important;
+        padding: 0 var(--spacing-sm);
+    }
+
+    .myth-fact-container h3.tips-title {
+        margin-top: 0 !important;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .myth-fact-container .section-subtitle {
+        margin-bottom: 2rem !important;
+        font-size: 1rem;
+    }
+
+    .myth-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .flip-card {
+        height: 320px;
+    }
+
+    .eco-icon {
+        opacity: 0.1;
+        /* Reduce distraction on mobile */
+    }
+}
