@@ -706,7 +706,7 @@ if ('serviceWorker' in navigator) {
 // ============================================
 
 function initializeEcoIcons() {
-    // Define eco-friendly icons
+    // Define eco-friendly icons with more variety
     const ecoIcons = [
         'fa-leaf',
         'fa-seedling',
@@ -717,7 +717,15 @@ function initializeEcoIcons() {
         'fa-wind',
         'fa-globe-asia',
         'fa-heart',
-        'fa-hands-helping'
+        'fa-hands-helping',
+        'fa-cloud',
+        'fa-mountain',
+        'fa-spa',
+        'fa-apple-alt',
+        'fa-fish',
+        'fa-dove',
+        'fa-frog',
+        'fa-feather-alt'
     ];
 
     // Sections to add icons to
@@ -728,8 +736,8 @@ function initializeEcoIcons() {
         const iconContainer = document.createElement('div');
         iconContainer.className = 'section-eco-icons';
 
-        // Add 6 icons per section
-        for (let i = 1; i <= 6; i++) {
+        // Add 10 icons per section with varied icons
+        for (let i = 1; i <= 10; i++) {
             const icon = document.createElement('i');
             const randomIcon = ecoIcons[Math.floor(Math.random() * ecoIcons.length)];
             icon.className = `fas ${randomIcon} eco-icon icon-${i}`;
@@ -740,7 +748,7 @@ function initializeEcoIcons() {
         section.insertBefore(iconContainer, section.firstChild);
     });
 
-    console.log('✨ Eco icons initialized in all sections');
+    console.log('✨ 10 Eco icons initialized in all sections with better visibility');
 }
 
 // ============================================

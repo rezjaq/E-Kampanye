@@ -4,10 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="EcoAction - Langkah Kecil untuk Bumi Lebih Sehat">
     <meta name="description"
         content="Kampanye lingkungan untuk generasi muda: Langkah kecil hari ini untuk bumi yang lebih sehat di masa depan. Mari bersama kurangi sampah plastik!">
-    <meta name="keywords" content="kampanye lingkungan, sampah plastik, generasi muda, lingkungan hidup, aksi nyata">
-    <title>Langkah Kecil untuk Bumi Lebih Sehat | E-Kampanye Lingkungan</title>
+    <meta name="keywords"
+        content="kampanye lingkungan, sampah plastik, generasi muda, lingkungan hidup, aksi nyata, eco action, zero waste, sustainability">
+    <meta name="author" content="EcoAction Indonesia">
+    <meta name="theme-color" content="#059669">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://e-kampanye.vercel.app/">
+    <meta property="og:title" content="EcoAction - Langkah Kecil untuk Bumi Lebih Sehat">
+    <meta property="og:description"
+        content="Bergabunglah dengan ribuan anak muda Indonesia dalam gerakan mengurangi sampah plastik. Bersama kita lebih kuat!">
+    <meta property="og:image" content="https://e-kampanye.vercel.app/lingkungan.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://e-kampanye.vercel.app/">
+    <meta property="twitter:title" content="EcoAction - Langkah Kecil untuk Bumi Lebih Sehat">
+    <meta property="twitter:description"
+        content="Bergabunglah dengan ribuan anak muda Indonesia dalam gerakan mengurangi sampah plastik. Bersama kita lebih kuat!">
+    <meta property="twitter:image" content="https://e-kampanye.vercel.app/lingkungan.jpg">
+
+    <title>EcoAction - Langkah Kecil untuk Bumi Lebih Sehat | Kampanye Lingkungan</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,8 +51,10 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-brand">
-                <i class="fas fa-leaf"></i>
-                <span>EcoAction</span>
+                <div class="logo-icon-wrapper">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <span class="logo-text">Eco<span class="logo-highlight">Action</span></span>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
@@ -38,7 +63,8 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Beranda</a></li>
-                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#campaign-info" class="nav-link">Kampanye</a></li>
+                <li><a href="#about" class="nav-link">Masalah</a></li>
                 <li><a href="#education" class="nav-link">Edukasi</a></li>
                 <li><a href="#challenge" class="nav-link">Aksi</a></li>
                 <li><a href="#innovation" class="nav-link">Inovasi</a></li>
@@ -89,11 +115,81 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
+    </section>
+
+    <!-- Campaign Info Section -->
+    <section id="campaign-info" class="campaign-info-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Tentang Kampanye Ini</h2>
+                <p class="section-subtitle">
+                    Gerakan nyata dari generasi muda untuk masa depan bumi yang lebih hijau
+                </p>
             </div>
-            <p>Scroll untuk jelajahi</p>
+
+            <div class="campaign-content">
+                <div class="campaign-card" data-aos="fade-right">
+                    <div class="campaign-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Visi Kami</h3>
+                    <p>
+                        Menciptakan generasi muda Indonesia yang peduli lingkungan dan aktif
+                        melakukan aksi nyata mengurangi sampah plastik untuk masa depan bumi
+                        yang lebih sehat dan berkelanjutan.
+                    </p>
+                </div>
+
+                <div class="campaign-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="campaign-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Misi Kami</h3>
+                    <ul class="mission-list">
+                        <li><i class="fas fa-check-circle"></i> Mengedukasi 10,000+ generasi muda tentang bahaya plastik
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> Mengajak 5,000+ peserta ikut tantangan mengurangi
+                            plastik</li>
+                        <li><i class="fas fa-check-circle"></i> Membangun komunitas peduli lingkungan yang solid</li>
+                        <li><i class="fas fa-check-circle"></i> Mendorong inovasi teknologi ramah lingkungan</li>
+                    </ul>
+                </div>
+
+                <div class="campaign-card" data-aos="fade-left" data-aos-delay="200">
+                    <div class="campaign-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Tim Kami</h3>
+                    <p>
+                        Kampanye ini diinisiasi oleh mahasiswa Ilmu Komputer yang peduli
+                        lingkungan, didukung oleh Himpunan Mahasiswa Ilmu Komputer
+                        Universitas Nahdlatul Ulama Blitar. Kami percaya bahwa teknologi
+                        dan kreativitas generasi muda dapat menjadi solusi nyata untuk
+                        permasalahan lingkungan.
+                    </p>
+                    <div class="campaign-stats-mini">
+                        <div class="stat-mini">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Mahasiswa Peduli Lingkungan</span>
+                        </div>
+                        <div class="stat-mini">
+                            <i class="fas fa-university"></i>
+                            <span>UNU Blitar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="campaign-cta" data-aos="zoom-in">
+                <div class="cta-content">
+                    <h3>Bergabunglah dengan Gerakan Kami!</h3>
+                    <p>Bersama kita bisa membuat perubahan nyata untuk bumi</p>
+                    <a href="#join" class="btn btn-large btn-white">
+                        <span>Mulai Aksi Sekarang</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -307,29 +403,31 @@
                         </div>
                     </div>
 
-                    <div class="tip-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tip-card" data-aos="zoom-in" data-aos-delay="400">
                         <div class="tip-number">05</div>
                         <div class="tip-icon">
-                            <i class="fas fa-recycle"></i>
+                            <i class="fas fa-seedling"></i>
                         </div>
-                        <h4>Refill & Reuse</h4>
-                        <p>Pilih produk yang bisa diisi ulang dan gunakan kembali wadah yang masih layak pakai.</p>
+                        <h4>Kompos Sampah Organik</h4>
+                        <p>Ubah sampah organik jadi kompos untuk tanaman. Kurangi sampah dan dapatkan pupuk alami
+                            gratis!</p>
                         <div class="tip-impact">
                             <i class="fas fa-leaf"></i>
-                            <span>Perpanjang umur produk 5x lipat</span>
+                            <span>Kurangi 40% sampah rumah tangga</span>
                         </div>
                     </div>
 
-                    <div class="tip-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tip-card" data-aos="zoom-in" data-aos-delay="500">
                         <div class="tip-number">06</div>
                         <div class="tip-icon">
-                            <i class="fas fa-recycle"></i>
+                            <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <h4>Refill & Reuse</h4>
-                        <p>Pilih produk yang bisa diisi ulang dan gunakan kembali wadah yang masih layak pakai.</p>
+                        <h4>Belanja Bijak</h4>
+                        <p>Beli produk dengan kemasan minimal, pilih produk lokal, dan hindari kemasan plastik berlapis.
+                        </p>
                         <div class="tip-impact">
                             <i class="fas fa-leaf"></i>
-                            <span>Perpanjang umur produk 5x lipat</span>
+                            <span>Hemat 200+ kemasan plastik/tahun</span>
                         </div>
                     </div>
                 </div>
@@ -953,7 +1051,12 @@
 
             <div class="footer-bottom">
                 <p>&copy; 2026 EcoAction Indonesia. Dibuat dengan <i class="fas fa-heart"></i> untuk Bumi.</p>
-                <p class="footer-note">Website ini dibuat untuk kompetisi desain website tingkat universitas</p>
+                <p class="footer-note">Kampanye Peduli Lingkungan untuk Generasi Muda</p>
+                <p class="footer-organization">
+                    <i class="fas fa-university"></i>
+                    Himpunan Mahasiswa Ilmu Komputer - Universitas Nahdlatul Ulama Blitar
+                </p>
+                <p class="footer-competition">Lomba Desain Website 2026</p>
             </div>
         </div>
     </footer>

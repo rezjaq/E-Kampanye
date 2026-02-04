@@ -131,6 +131,31 @@ http-server -p 8000
 ```
 Buka browser dan akses `http://localhost:8000`
 
+### **Metode 3: Deploy ke Vercel (Production)**
+
+#### Quick Deploy:
+1. Kunjungi [vercel.com](https://vercel.com)
+2. Sign up/Login dengan GitHub
+3. Klik "Add New Project"
+4. Upload folder `E-Kampanye`
+5. Klik "Deploy"
+6. Website live dalam 30 detik!
+
+#### Via Vercel CLI:
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy
+cd E-Kampanye
+vercel
+
+# Production deployment
+vercel --prod
+```
+
+📖 **Panduan lengkap deployment**: Lihat [DEPLOYMENT.md](DEPLOYMENT.md)
+
 ---
 
 ## 📁 Struktur File
